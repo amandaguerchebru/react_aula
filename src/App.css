@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  /* toda largura da tela = mesmo que porcentagem */
+  height: 100vw;
+  background-image: linear-gradient(90deg, #002f52 35%, #326589);
 }
 
 .App-logo {
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

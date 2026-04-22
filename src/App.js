@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+// Estamos fazendo refatoração de código
 import './App.css';
+import Logo from './componentes/Logo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Senai
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        {/* nome da classe minusculo por ser importado */}
+        {/* segurando o ctrl conseguimos ver a função */}
+        <Logo></Logo>
       </header>
     </div>
   );
 }
 
+// exporta para abrir o arquivo que queremos
 export default App;
