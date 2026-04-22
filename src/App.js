@@ -1,15 +1,25 @@
 // Estamos fazendo refatoração de código
 import './App.css';
-import IconesHeader from './componentes/IconesHeader';
-import Logo from './componentes/Logo';
-import OpcoesHeader from './componentes/OpcoesHeader';
+import Header from './componentes/Header';
+import styled from 'styled-components';
 
+// styled components = container que guarda os estilos 
+const AppContainer = `
+  width: 100vw;
+  // toda largura da tela = mesmo que porcentagem
+  height: 100vw;
+  background-image: linear-gradient(90deg, #002f52 35%, #326589);
+
+  .li{
+  list-style: none;
+}
+`
 
 function App() {
   return (
-    <div className='App'>
-      
-    </div>
+      <AppContainer>
+        <Header />
+      </AppContainer>
   );
 }
 
