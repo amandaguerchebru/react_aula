@@ -4,13 +4,13 @@ import Header from './componentes/Header';
 import styled from 'styled-components';
 
 // styled components = container que guarda os estilos 
-const AppContainer = `
+const AppContainer = styled.div`
   width: 100vw;
-  // toda largura da tela = mesmo que porcentagem
+  // vw - toda largura da tela = mesmo que porcentagem
   height: 100vw;
   background-image: linear-gradient(90deg, #002f52 35%, #326589);
 
-  .li{
+  li {
   list-style: none;
 }
 `

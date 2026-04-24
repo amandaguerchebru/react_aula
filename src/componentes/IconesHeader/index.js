@@ -1,16 +1,31 @@
-import './estilo.css'
 import perfil from '../../imagens/perfil.svg';
 import sacola from '../../imagens/sacola.svg';
+import styled from 'styled-components';
+
+
+// A classe é a constante
+// substitui na lista (li) - onde era li agora é Icone
+const Icone = styled.li`
+  margin-right: 40px;
+  width: 25px;
+`
+
+// ul = lista não ordenada
+const Icones = styled.ul`
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+`
 
 const icones = [perfil, sacola];
 
 function IconesHeader() {
     return (
-        <ul className='icones'>
+        <Icones>
             {icones.map((icone) => (
-                <li><img src={icone}></img></li>
+                <Icone><img src={icone} alt='icone'/></Icone>
             ))}
-        </ul>
+        </Icones>
     )
 }
 
