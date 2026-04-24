@@ -4,6 +4,7 @@ import './App.css';
 import Header from './componentes/Header';
 import styled from 'styled-components';
 import Pesquisa from './componentes/Pesquisa';
+import UltimosLancamentos from './componentes/UltimosLancamentos';
 
 // styled components = container que guarda os estilos 
 const AppContainer = styled.div`
@@ -18,6 +19,7 @@ function App() {
       <AppContainer>
         <Header />
         <Pesquisa />
+        <UltimosLancamentos/>
       </AppContainer>
   );
 }
